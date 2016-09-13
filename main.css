@@ -1,0 +1,10 @@
+body{
+	background-color:#fefff0
+}
+
+#login-info {
+	background-color:#b9a38a;
+	color:#425b74;
+	border-top: 4px solid #425b74;
+	border-bottom: 4px solid #425b74;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<script src="jquery-3.1.0.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 		<script src="functions.js"></script>
+	</head>
+
+	<body style="background-color:#fefff0" onload="init()">
+		<div id="login-info">
+			<form class="form-inline">
+				<div class="form-group" style="margin:10px">
+					<label for="usr">User Name: </label>
+					<input type="text" class="form-control" id="usr" style="width:300px">
+				</div>
+				<div class="form-group" style="margin:10px">
+					<label for="password">Password: </label>
+					<input type="password" class="form-control" id="password" style="width:300px">					
+				</div>
+				<button type="button" class="btn btn-secondary">Login!</button>
+			</form>
+		</div>
+		<img src="./albumographer-logo.png" style="width:50%; margin: auto; display: block;"/>
+		
+		<div style="margin-left:10px;">
+			<input type="file" id="files" name="files[]" />
+			<output id="list"></output>
+			<button type="button" class="btn btn-secondary" style="background-color:#adedff" onclick="addRandomFile()">Add a random file</button>
+			<button type="button" class="btn btn-secondary" style="background-color:#adedff">Add file from URL</button>
+			<button type="button" class="btn btn-secondary" style="background-color:#adedff" onclick="init()">Reset default pictures</button>
+			<button type="button" class="btn btn-secondary" style="background-color:#adedff" onclick="clearFiles()">Clear all files</button>
+		</div>
+		
+		<hr>
+		<div id="picture-output"></div>
+	</body>
+</html>
